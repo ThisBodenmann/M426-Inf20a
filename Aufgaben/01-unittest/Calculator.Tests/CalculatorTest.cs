@@ -36,5 +36,23 @@ namespace Calculator.Tests
             // Then
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void TestMultiplyTwoAndThreeIsSix()
+        {
+            Assert.Equal(6, Calculator.Multiply(3, 2));
+        }
+
+        [Fact]
+        public void TestDivideEightAndTwoIsFour()
+        {
+            Assert.Equal(4, Calculator.Divide(8, 2));
+        }
+
+        [Fact]
+        public void TestDivideWithZero()
+        {
+            Assert.Throws<ArgumentException>(() => Assert.Equal(0, Calculator.Divide(8, 0)));
+        }
     }
 }
