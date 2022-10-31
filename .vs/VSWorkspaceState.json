@@ -1,10 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\hello-csharp",
-    "\\hello-csharp\\Calculator",
-    "\\hello-csharp\\Calculator.Tests"
+    "\\Aufgaben",
+    "\\Aufgaben\\01-unittest",
+    "\\Aufgaben\\01-unittest\\Calculator",
+    "\\Aufgaben\\01-unittest\\Calculator.Tests"
   ],
-  "SelectedNode": "\\hello-csharp\\testing.sln",
+  "SelectedNode": "\\Aufgaben\\01-unittest\\unittest-csharp.sln",
   "PreviewInSolutionExplorer": false
 }

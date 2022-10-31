@@ -38,5 +38,31 @@ namespace Statistics.Tests
             Average average = new Average();
             Assert.Throws<ArgumentException>(() => Assert.Equal(0, average.Mean(numbers)));
         }
+
+        [Fact]
+        public void TestMedianForOddNumberOfElements()
+        {
+            List<int> numbers = new List<int> { 1, 2, 3, 4, 5};
+
+            double expected = 3;
+            Average average = new Average();
+
+            double actual = average.Median(numbers);
+
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void TestMedianForEvenNumberOfElements()
+        {
+            List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6};
+
+            double expected = 3.5;
+            Average average = new Average();
+
+            double actual = average.Median(numbers);
+
+            Assert.Equal(expected, actual);
+        }
     }
 }

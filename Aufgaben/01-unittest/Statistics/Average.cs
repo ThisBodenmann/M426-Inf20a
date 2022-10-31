@@ -19,5 +19,21 @@ namespace Statistics
             mean = (double)sum / numbers.Count;
             return mean;
         }
+
+        public double Median(List<int> numbers)
+        {
+            if (numbers.Count % 2 == 1)
+            {
+                return numbers[Convert.ToInt32(Math.Ceiling(Convert.ToDouble(numbers.Count) / 2)) - 1];
+            } else if (numbers.Count != 0)
+            {
+                int first = numbers.Count / 2 - 1;
+                int second = numbers.Count / 2;
+                return Convert.ToDouble((numbers[first] + numbers[second])) / 2;
+            } else
+            {
+                throw new ArgumentException();
+            }
+        } 
     }
 }
