@@ -4,7 +4,9 @@
     "\\Aufgaben",
     "\\Aufgaben\\01-unittest",
     "\\Aufgaben\\01-unittest\\Calculator",
-    "\\Aufgaben\\01-unittest\\Calculator.Tests"
+    "\\Aufgaben\\01-unittest\\Calculator.Tests",
+    "\\Aufgaben\\01-unittest\\Statistics",
+    "\\Aufgaben\\01-unittest\\Statistics.Tests"
   ],
   "SelectedNode": "\\Aufgaben\\01-unittest\\unittest-csharp.sln",
   "PreviewInSolutionExplorer": false
