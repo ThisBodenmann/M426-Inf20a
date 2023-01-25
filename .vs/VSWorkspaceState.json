@@ -4,8 +4,11 @@
     "\\Aufgaben",
     "\\Aufgaben\\02-tdd",
     "\\Aufgaben\\02-tdd\\FooBarQix",
-    "\\Aufgaben\\02-tdd\\FooBarQix.Tests"
+    "\\Aufgaben\\02-tdd\\FooBarQix.Tests",
+    "\\Aufgaben\\05-refactoring",
+    "\\Aufgaben\\05-refactoring\\Refactoring.Tests",
+    "\\Aufgaben\\07-design-pattern"
   ],
-  "SelectedNode": "\\Aufgaben\\02-tdd\\Tdd.sln",
+  "SelectedNode": "\\Aufgaben\\07-design-pattern\\DesignPattern.sln",
   "PreviewInSolutionExplorer": false
 }

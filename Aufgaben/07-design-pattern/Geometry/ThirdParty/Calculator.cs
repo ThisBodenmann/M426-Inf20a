@@ -18,5 +18,10 @@ namespace Geometry.ThirdParty
         {
             return Math.Sqrt(Math.Pow(rectangle.GetHeight(), 2.0) + Math.Pow(rectangle.GetWidth(), 2.0));
         }
+
+        public static double GetWidthHeightRatio(IRectangular rectangle)
+        {
+            return rectangle.GetWidth() / rectangle.GetHeight();
+        }
     }
 }

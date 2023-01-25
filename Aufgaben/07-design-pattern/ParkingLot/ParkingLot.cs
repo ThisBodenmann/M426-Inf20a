@@ -26,6 +26,8 @@ namespace ParkingLot
             {
                 throw new InvalidOperationException("parking lot is full");
             }
+
+            Notify("A car entered the lot");
         }
 
         [MethodImpl(MethodImplOptions.Synchronized)]
@@ -39,6 +41,16 @@ namespace ParkingLot
             {
                 throw new InvalidOperationException("parking lot is empty");
             }
+
+            Notify("A car left the lot");
         }
+
+        public void Notify(string changeOfOccupanceMessage)
+            => subscribers.ForEach(x => x.Update(
+                new Message(
+                    changeOfOccupanceMessage,
+                    Name,
+                    Occupied,
+                    Capacity)));
     }
 }

@@ -1,6 +1,6 @@
 namespace Payroll
 {
-    public interface Employable
+    public interface IEmployable
     {
         string GetFullName();
         float GetSalary();

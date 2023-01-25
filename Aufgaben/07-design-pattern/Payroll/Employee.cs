@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Payroll
 {
-    public class Employee : Employable
+    public class Employee : Employable, IAccountHolder
     {
         string FirstName { get; }
         string LastName { get; }
